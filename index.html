@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSafe - Stay Safe Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <div class="logo">🛡️ CyberSafe</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#threats">Threats</a></li>
+        <li><a href="#tips">Safety Tips</a></li>
+        <li><a href="#checker">Scam Checker</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>Stay Safe.<br>Stay Smart.<br>Stay Secure.</h1>
+        <p>Learn how to protect yourself from spam calls, spam messages, phishing and online scams.</p>
+        <a href="#checker" class="button">Check a Scam</a>
+    </div>
+    <div class="shield">🛡️</div>
+</section>
+
+<section class="about">
+    <h2>What is Cyber Security?</h2>
+    <p>Cyber security means protecting computers, mobile phones, networks and personal information from online threats.</p>
+    <div class="cards">
+        <div class="card"><div class="icon">📞</div><h3>Spam Calls</h3><p>Unwanted calls that may try to steal your personal or financial information.</p></div>
+        <div class="card"><div class="icon">💬</div><h3>Spam Messages</h3><p>Suspicious messages containing fake offers, links or requests for personal information.</p></div>
+        <div class="card"><div class="icon">🎣</div><h3>Phishing</h3><p>Fake emails or websites designed to steal passwords and sensitive information.</p></div>
+    </div>
+</section>
+
+<section id="threats" class="section">
+    <h2>Common Cyber Threats</h2>
+    <div class="threat-container">
+        <div class="threat"><h3>📞 Spam Calls</h3><p>Spam calls are unwanted calls from unknown people or organizations.</p><h4>Examples:</h4><ul><li>Fake bank calls</li><li>Fake KYC calls</li><li>Lottery calls</li><li>Fake job offers</li></ul><strong>Never share your OTP or PIN.</strong></div>
+        <div class="threat"><h3>💬 Spam Messages</h3><p>Spam messages may contain suspicious links or fake offers.</p><h4>Warning signs:</h4><ul><li>Unknown sender</li><li>Too-good-to-be-true offers</li><li>Urgent messages</li><li>Unknown links</li></ul><strong>Do not click suspicious links.</strong></div>
+        <div class="threat"><h3>🎣 Phishing</h3><p>Phishing is an attempt to trick people into giving away sensitive information.</p><h4>Common targets:</h4><ul><li>Passwords</li><li>Bank information</li><li>OTP</li><li>Personal information</li></ul><strong>Always check the website address.</strong></div>
+    </div>
+</section>
+
+<section id="tips" class="tips">
+    <h2>🔐 Cyber Safety Tips</h2>
+    <div class="tips-grid">
+        <div>🔑 Use strong passwords</div><div>📱 Keep your apps updated</div>
+        <div>🚫 Don't share OTP</div><div>🔗 Avoid unknown links</div>
+        <div>🔒 Enable 2-factor authentication</div><div>💳 Never share your PIN</div>
+        <div>📧 Check suspicious emails</div><div>🛡️ Use trusted websites</div>
+    </div>
+</section>
+
+<section id="checker" class="checker">
+    <h2>🧪 Scam Checker</h2>
+    <p>Enter a suspicious message below. The checker looks for common scam warning signs.</p>
+    <textarea id="message" placeholder="Example: Congratulations! You won ₹50,000. Click this link to claim your prize..."></textarea>
+    <br><button onclick="checkScam()">Check Message</button>
+    <div id="result"></div>
+</section>
+
+<section id="quiz" class="quiz">
+    <h2>📝 Cyber Safety Quiz</h2>
+    <div class="question"><p><b>1. Should you share your OTP with someone claiming to be from your bank?</b></p>
+        <label><input type="radio" name="q1" value="wrong"> Yes</label>
+        <label><input type="radio" name="q1" value="correct"> No</label>
+    </div>
+    <div class="question"><p><b>2. What should you do with a suspicious link?</b></p>
+        <label><input type="radio" name="q2" value="correct"> Avoid clicking it</label>
+        <label><input type="radio" name="q2" value="wrong"> Click it immediately</label>
+    </div>
+    <div class="question"><p><b>3. Which is a good password?</b></p>
+        <label><input type="radio" name="q3" value="wrong"> 123456</label>
+        <label><input type="radio" name="q3" value="correct"> A strong unique password</label>
+    </div>
+    <button onclick="checkQuiz()">Submit Quiz</button>
+    <div id="quizResult"></div>
+</section>
+
+<footer>
+    <h3>🛡️ CyberSafe</h3>
+    <p>Learn. Protect. Stay Safe Online.</p>
+    <p>© 2026 CyberSafe | B.Sc. Computer Science Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
